@@ -1,107 +1,135 @@
-<!--Andrew Tringali COMM329 F24
-
-CHANGES:
-10/17/24: Added jquery framework & changelog (should've done earlier honestly)
--->
-
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Andrew Tringali</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css/clean.css">
-        <script src="scripts/jquery-3.7.1.js"></script>
-        <script src="scripts/stuff.js"></script>
-    </head>
-    <body>
-        <header>
-            <h1>Andrew Tringali</h1>
-        </header>
-        <nav>
-            <div class="navBar">
-                <a class="navItem" href="index.html">Home</a>
-                <a class="navItem" href="about.html">About</a>
-                <div class="dropdown">
-                    <a>Projects</a>
-                    <ul class="dropdown-content">
-                        <li><a href="projects.html">Overview</a></li>
-                        <li><a href="#">Project 1</a></li>
-                        <li><a href="#">Project 2</a></li>
-                        <li><a href="#">Project 3</a></li>
-                    </ul>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Andrew Tringali</title>
+    <link rel="stylesheet" href="clean.css">
+  </head>
+  <body>
+    <div class="container-fluid bg-black p-0">
+        <img src="img/banner.png" class="rounded img-fluid" alt="Banner">
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Me</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Projects
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">ROBLOX game</a></li>
+                  <li><a class="dropdown-item" href="#">RecipeBuddy</a></li>
+                  <li><a class="dropdown-item" href="#">Website</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Car 1</a></li>
+                  <li><a class="dropdown-item" href="#">Car 2</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Custom PCs</a></li>
+                  <li><a class="dropdown-item" href="#">Vintage laptops</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resume</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container mb-4 mt-4 p-0">
+        <div class="container p-4 border rounded bg-light">
+            <div class="row">
+                <div class="col-3 bg">
+                    <img src="img/img1.png" class="img-fluid rounded" alt="Me with cat">
                 </div>
-                <a class="navItem" href="contact.html">Contact</a>
-                <a class="navItem" href="resume.html">Resume</a>
+                <div class="col p-5">
+                    <h1>Hi, I'm Andrew</h1>
+                    <p>I’m Andrew Tringali, a fifth-year computer science student from Clinton, Massachusetts. This is the biography section. I will add more soon.</p>
+                </div>
             </div>
-        </nav>
-        <div class="mainContent">
-            <div class="vertical-container">
-                <div class="item">
-                    <img src="images/img1.png" class="item-picture" alt="desktop"
-                    width="200"
-                    height="225"/>	
-                    <div class="item-content">
-                        <h2>Hi. I'm Andrew.</h2>
-                        <p>I’m Andrew Tringali, a fifth-year computer science student from Clinton, Massachusetts.</p>
-                        <p>This is the biography section. I will add more soon.</p>
-                        <div class="read-more-container">
-                            <a href="about.html">
-                                <button class="read-more-btn">More about me</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="itemc">
-                    <div class="grid-container">
-                        <div class="card">
-                            <h2>"Andrew Tringali? No, I have no idea who that could be, sorry."</h2>
-                            <p>-Some random person on campus</p>
-                        </div>
-                        <div class="card">
-                            <h2>"Isn't that the guy who's car exploded outside RoBro?"</h2>
-                            <p>-Yeah</p>
-                        </div>
-                        <div class="card">
-                            <h2>"I don't feel like making any more fake quotes, sorry about that."</h2>
-                            <p>-Me</p>
-                        </div>
-                    </div>
-                    <div class="read-more-container">
-                        <a href="resume.html">
-                            <button class="read-more-btn">More references</button>
-                        </a>
-                    </div>
-                </div>
-                <div class="itemc">
-                    <h2>My Projects</h2>
-                    <p>Hardware, software, and everything in between.</p>
-                    <div class="grid-container">
-                        <div class="card">
-                            <img src="images/img1.png" alt="Placeholder Image">
-                            <h2>Project 1</h2>
-                            <p>This is a short description for project 1.</p>
-                        </div>
-                        <div class="card">
-                            <img src="images/img2.png" alt="Placeholder Image">
-                            <h2>Project 2</h2>
-                            <p>This is a short description for project 2.</p>
-                        </div>
-                        <div class="card">
-                            <img src="images/img3.png" alt="Placeholder Image">
-                            <h2>Project 3</h2>
-                            <p>This is a short description for project 3.</p>
-                        </div>
-                    </div>
-                    <div class="read-more-container">
-                        <a href="projects.html">
-                            <button class="read-more-btn">More projects</button>
-                        </a>
-                    </div>
-                </div>
         </div>
+        <div class="container p-4 mb-4 mt-4 border rounded bg-light">
+            <div class="row gx-2">
+                <div class="col">
+                    <div class="border rounded bg-white p-4">
+                        <h2>"Andrew Tringali? No, I have no idea who that could be, sorry."</h2>
+                        <p>-Some random person on campus</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="border rounded bg-white p-4">
+                        <h2>"Isn't that the guy who's car exploded outside RoBro?"</h2>
+                        <p>-Yeah</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="border rounded bg-white p-4">
+                        <h2>"I don't feel like making any more fake quotes, sorry about that."</h2>
+                        <p>-Yours Truly</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-2 pt-4">
+                <div class="d-grid gap-2 col-4 mx-auto">
+                        <button type="button" class="btn btn-lg btn-primary">More About Me</button>
+                </div>
+            </div>
         </div>
-        <footer>
-            <p>© Andrew Tringali 2024</p>
-        </footer>
-    </body>
+        <h1>My Projects</h1>
+        <div class="container p-4 mt-4 border rounded bg-light">
+            <div class="row gx-2">
+                <div class="col">
+                    <div class="border rounded bg-white p-4">
+                        <img src="img/img1.png" class="img-fluid rounded" alt="Me with cat">
+                        <h2 class="p-3">Project 1</h2>
+                        <p>This is a description for the first project.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="border rounded bg-white p-4">
+                        <img src="img/img2.png" class="img-fluid rounded" alt="Me with cat">
+                        <h2 class="p-3">Project 2</h2>
+                        <p>This is a description for the second project.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="border rounded bg-white p-4">
+                        <img src="img/img3.png" class="img-fluid rounded" alt="Me with cat">
+                        <h2 class="p-3">Project 3</h2>
+                        <p>This is a description for the third project.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="border rounded bg-white p-4">
+                        <img src="img/img4.png" class="img-fluid rounded" alt="Me with cat">
+                        <h2 class="p-3">Project 4</h2>
+                        <p>This is a description for the fourth project.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-2 pt-4">
+                <div class="d-grid gap-2 col-4 mx-auto">
+                        <button type="button" class="btn btn-lg btn-primary">More Projects</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
 </html>
